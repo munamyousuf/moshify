@@ -247,6 +247,11 @@ a {
     width: 100%;
 }
 
+.btn--streched {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
 .btn--outline {
     background-color: transparent;
     color: var(--color-headings);
@@ -509,5 +514,49 @@ a {
 
     .testimonial .quote {
         margin-left: 6rem;
+    }
+}
+
+/* Callouts */
+.callout {
+    padding: 4rem;
+    border-radius: 5px;
+}
+
+.callout--primary {
+    background-color: var(--color-primary);
+}
+
+.callout__heading {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.callout .btn {
+    align-self: center;
+    justify-self: center;
+}
+
+.callout p {
+    color: #fff;
+}
+
+.callout__content {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .callout__content {
+        text-align: left;
+    }
+
+    .callout .btn {
+        justify-self: start;
+        margin: 0 2rem;
+    }
+
+    .callout .grid--1x2 {
+        grid-template-columns: 1fr auto;
     }
 }
